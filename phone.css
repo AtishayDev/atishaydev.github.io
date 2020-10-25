@@ -1,0 +1,70 @@
+#moving{
+    display: none;
+}
+#profilePic{
+    width: 100%;
+}
+#name{
+    width: 100%;
+    justify-content: center;
+}
+#right{
+    left:0px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    width: 285px;
+     position: absolute; 
+     right: 0px;
+    top: -1px; 
+    /* justify-content: space-between; */
+}
+#right img{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    padding: 4px;
+    align-items: flex-start;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10100px;
+    transition: all 0.8s ease-in-out;
+}
+.navbar li{
+    display: flex;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+    list-style: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: -1.3px -1.3px 1px  rgb(194, 194, 194);
+    transition: all 0.16s ease-in-out;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: column;
+    height: 50px;
+    /* width: 100%; */
+    padding: 4px;
+    /* border: 2px solid brown; */
+    background: rgba(0, 0, 0, 0.952);
+}
+
+.navbar li a {
+    padding: 8px;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(230, 230, 230);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.16s ease-in-out;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media="screen and (max-width:1400px)" href="phone.css">
+
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <nav id="navigation">
+        <div class="container">
+            <div id="mid">
+                <p id="moving">Pearl Eye Photography<span class="cover"></span></p>
+                <ul class="navbar">
+                    <li><a href="main.html">Overview</a></li>
+                    <li><a href="motion.html">Motion</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <a href="main.html"><img src="PElogo.jpg" alt=""></a></div>
+        </div>
+        </div>
+    </nav>
+    <br><br>
+    <div id="icons">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /><a
+                href="https://www.instagram.com/pearl.eye_" target="_blank">Instagram</a></div>
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" /><a
+                href="https://www.linkedin.com/in/praharsh-pande-a65862190" target="_blank">Linkedin</a></div>
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/call-male.png" />8756244366</div>
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/email.png" />praharshpande@gmail.com</div>
+    </div>
+    <script>
+        var $p = $('#moving'),
+            $cover = $('.cover'),
+            width = $p.width(),
+            decrement = width / $p.text().length;
+
+        function addChar() {
+            $cover.css('width', '-=' + decrement);
+
+            if (parseInt($cover.css('width')) < width) {
+                setTimeout(addChar, -10);
+            }
+        }
+
+        addChar();
+    </script>
+</body>
+
+</html>
